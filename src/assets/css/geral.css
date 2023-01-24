@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Oswald:wght@300;400;500;600;700&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* Classes Auxiliares */
+
+.desk {
+    display: block;
+}
+
+.mob {
+    display: none;
+}
+
+@media screen and (max-width:850px) {
+    .desk {
+        display: none;
+    }
+    .mob {
+        display: block;
+    }
+}
+
+select {
+    background: #fff;
+    color: #000;
+}
+
+.container {
+    max-width: 1200px !important;
+}
+
+.row {
+    margin: 0 auto;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* ===================================================== */
+
+* {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -1px !important;
+}
+
+p, span, strong, a, button, input, textarea, div {
+    letter-spacing: -0.5px !important;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+h1,
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-weight: bold;
+}
+
+p,
+h3,
+h4,
+h5,
+h6 {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: sans-serif;
+    margin: 0;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+}
+
+[type="text"],
+[type="password"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="month"],
+[type="week"],
+[type="email"],
+[type="number"],
+[type="search"],
+[type="tel"],
+[type="time"],
+[type="url"],
+[type="color"],
+textarea {
+    margin: 0;
+    box-shadow: none;
+    border-radius: 4px;
+    border-color: #b0bec5;
+    font-size: 14px;
+}
+
+[type="text"]:focus,
+[type="password"]:focus,
+[type="date"]:focus,
+[type="datetime"]:focus,
+[type="datetime-local"]:focus,
+[type="month"]:focus,
+[type="week"]:focus,
+[type="email"]:focus,
+[type="number"]:focus,
+[type="search"]:focus,
+[type="tel"]:focus,
+[type="time"]:focus,
+[type="url"]:focus,
+[type="color"]:focus,
+textarea:focus {
+    background-color: #fff;
+    box-shadow: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    opacity: 1;
+    color: #b0bec5;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    opacity: 1;
+    color: #b0bec5;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    opacity: 1;
+    color: #b0bec5;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+    opacity: 1;
+    color: #b0bec5;
+}
+
+input::placeholder,
+textarea::placeholder {
+    opacity: 1;
+    color: #b0bec5;
+}
+
+input.alert,
+textarea.alert {
+    border-color: red;
+    box-shadow: 2px 2px 8px rgba(255, 0, 0, 0.3);
+}
+
+ul,
+ul ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===================== Animações ===================== */
+
+.fade-leave-to,
+.fade-enter {
+    opacity: 0;
+    max-height: 0;
+}
+
+.fade-leave-active {
+    transition: opacity 300ms;
+}
+
+.fade-enter-active {
+    transition: opacity 300ms 350ms ease;
+}
+
+.fade-enter-to {
+    opacity: 1;
+}
+
+.fadeNoDelay-leave-to,
+.fadeNoDelay-enter {
+    opacity: 0;
+}
+
+.fadeNoDelay-leave-active,
+.fadeNoDelay-enter-active {
+    transition: 300ms;
+}
+
+.slideUp-enter {
+    transform: translateY(100%);
+}
+
+.slideUp-leave-active,
+.slideUp-enter-active {
+    transition: 300ms;
+}
+
+.slideUp-leave-to {
+    transform: translateY(100%);
+}
+
+.slideDown-leave-to,
+.slideDown-enter {
+    max-height: 0;
+}
+
+.slideDown-leave-active,
+.slideDown-enter-active {
+    transition: 500ms;
+    overflow: hidden;
+}
+
+.slideDown-leave,
+.slideDown-enter-to {
+    max-height: 400px;
+}
+
+.slideDown-leave-active {
+    transition: 200ms;
+}
+
+@keyframes loading {
+    to {
+        background-position: 600%;
+    }
+}

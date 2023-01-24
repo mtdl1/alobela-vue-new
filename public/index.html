@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Alobela - Despertando sua melhor versão!</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="canonical" href="" />
+        <meta name="adopt-website-id" content="e29df352-ae33-43d6-8ba6-170565b5ef34" />
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
+        <!-- Sistema Open Graph -->
+        <meta property="og:title" content=""/>
+        <meta property="og:description" content=""/>
+        <meta property="og:site_name" content=""/>
+        <meta property="og:type" content=""/>
+        <meta property="og:url" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:image:alt" content=""/>
+        <!-- Twitter Card -->
+        <meta name="twitter:title" content=""/>
+        <meta name="twitter:description" content=""/>
+        <meta name="twitter:card" content=""/>
+        <!-- <meta name="twitter:site" content=""/> -->
+        <meta name="twitter:image" content=""/>
+        <meta name="twitter:image:alt" content=""/>
+        <script src="https://kit.fontawesome.com/b1dbe216c1.js" crossorigin="anonymous"></script>
+
+        <link rel="shortcut icon" href="alobela-favicon.webp" type="image/x-icon">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <style>
+            #ativeJs {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                text-align: center;
+            }
+
+            #ativeJs strong {
+                font-size: 24px;
+                font-family: arial;
+            }
+        </style>
+    </head>
+
+    <body>
+        <noscript>
+            <div id="ativeJs">
+                <strong>Lamentamos, mas <%= htmlWebpackPlugin.options.title %> não funciona corretamente sem o JavaScript ativado. Ative-o para continuar.</strong>
+            </div>
+        </noscript>
+        <div id="app"></div>
+        <!-- built files will be auto injected -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
+
+<style>
+    /*CSS Botão Fechar do chatbot*/
+    #bot-fechar {
+        text-align: center;
+        background-color: #1c1c1c;
+        visibility: visible;
+        position: fixed;
+        z-index: 99999;
+        cursor: pointer;
+        box-sizing: border-box;
+        font-family: Arial;
+        color: #fff;
+        display: block;
+        padding: 1px 6px;
+        border-radius: 100%;
+        bottom: 75px;
+        right: 236px;
+        border: 1px solid #fff;
+    }
+    div#bot, span#bot-span {
+        visibility: hidden !important;
+        opacity: 0 !important;
+        display: none !important;
+    }
+</style>
